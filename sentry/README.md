@@ -10,7 +10,7 @@ _.env_ Datei anlegen
     SENTRY_DB_PASSWORD=secret
     SENTRY_REDIS_HOST=redis
     SENTRY_REDIS_PORT=6379
-    SENTRY_SECRET_KEY=***YOUR_SECRET_KEY***
+    SENTRY_SECRET_KEY=***SENTRY_SCHLUESSEL***
 
 _docker-compose.yml_ Datei anlegen
 
@@ -71,7 +71,8 @@ __secret-key__ auf Kommandozeile anlegen
 
     $ docker-compose run --rm sentry config generate-secret-key
     $ vi oder nano .env
-danach den SENTRY_SECRET_KEY ind die _.env_ Datei einfügen und das compose file starten.
+
+danach den SENTRY_SECRET_KEY in der _.env_ Datei einfügen (austauschen) (***SENTRY_SCHLUESSEL***) und die compose Datei starten.
 
 
     
@@ -80,7 +81,7 @@ danach den SENTRY_SECRET_KEY ind die _.env_ Datei einfügen und das compose file
     $ docker-compose up -d
 
 
-##Sentry starten
+## Sentry starten
 
 
 http://localhost:9000
