@@ -13,4 +13,4 @@ Das ganze ist bestimmt nicht immer aktuell, daher bitte auf die letzte Änderung
 
 
 ---
-<small>Letzte Änderung: 28.02.2019</small>
+Letzte Änderung: 28.02.2019
