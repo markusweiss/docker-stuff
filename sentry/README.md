@@ -10,7 +10,14 @@ _.env_ Datei anlegen
     SENTRY_DB_PASSWORD=secret
     SENTRY_REDIS_HOST=redis
     SENTRY_REDIS_PORT=6379
-    SENTRY_SECRET_KEY=***SENTRY_SCHLUESSEL***
+    SENTRY_SECRET_KEY=[sentry-schluessel]
+
+    SENTRY_EMAIL_HOST=[smtp.meinmailprovider.de]
+    SENTRY_EMAIL_PORT=587 
+    SENTRY_EMAIL_PASSWORD=[emailpasswort]
+    SENTRY_EMAIL_USER=[username-von-mailaccount]
+    SENTRY_EMAIL_USE_TLS=true 
+    SENTRY_SERVER_EMAIL=[meine.mail@meinmailprovider.de]
 
 _docker-compose.yml_ Datei anlegen
 
@@ -67,16 +74,23 @@ _docker-compose.yml_ Datei anlegen
     redis-data:
     pg-data:
 
+__Mail konfigurieren__ auf Kommandozeile anlegen
+
+    $ vi oder nano .env
+
+Die in Klammern [meinwert] geschrieben Werte durch Eure Einstellungen ersetzen. 
+
+Das sind in der Regel die Daten mit denen Ihr auch Eure Mails abruft.
+
+Ich würde für die Sentry Konfiguartion eine neues Konto anlegen.
+
 __secret-key__ auf Kommandozeile anlegen
 
     $ docker-compose run --rm sentry config generate-secret-key
     $ vi oder nano .env
 
-danach den SENTRY_SECRET_KEY in der _.env_ Datei einfügen (austauschen) (***SENTRY_SCHLUESSEL***) und die compose Datei starten.
+danach den SENTRY_SECRET_KEY in der _.env_ Datei einfügen (austauschen) [sentry-schluessel] und die compose Datei starten.
 
-
-    
-    
     $ docker-compose run --rm sentry upgrade
     $ docker-compose up -d
 
@@ -87,4 +101,4 @@ danach den SENTRY_SECRET_KEY in der _.env_ Datei einfügen (austauschen) (***SEN
 http://localhost:9000
 
 ---
-Letzte Änderung: 27.02.2019
+Letzte Änderung: 13.03.2019
