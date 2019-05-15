@@ -20,8 +20,11 @@
 
     $ docker rmi imageId
 
+## Alle Docker Container stoppen
 
-## Alle Docker containers löschen
+    $ docker stop $(docker ps -a -q)
+
+## Alle Docker Container löschen
 
 
     $ docker rm -f $(docker ps -a -q)
