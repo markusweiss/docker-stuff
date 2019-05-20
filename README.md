@@ -9,8 +9,10 @@ Das ganze ist bestimmt nicht immer aktuell, daher bitte auf die letzte Änderung
 
 * [command line help](cli/README.md)
 * [Install Sentry](sentry/README.md)
+* [Install Drupal](drupal/README.md)
+
 
 
 
 ---
-Letzte Änderung: 28.02.2019
+Letzte Änderung: 20.05.2019
