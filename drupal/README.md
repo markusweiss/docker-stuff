@@ -9,7 +9,7 @@ Ordner erstellen, z.B.: _Drupal8_
     $ cd Drupal8
     $ docker-compose up
 
-Im Browser: _localhost:8080_ aufrufen.
+Im Browser: [_localhost:8080_](http://localhost:8080) aufrufen.
 
 Installation erfolgt dann per Drupal Installationsscript.
 
