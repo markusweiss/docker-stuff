@@ -13,6 +13,11 @@ Im Browser: [_localhost:8080_](http://localhost:8080) aufrufen.
 
 Installation erfolgt dann per Drupal Installationsscript.
 
+## Achtung
+
+volumes: - /**datadir**:/var/lib/mysql
+
+**Die Speicherung im Container wurde auf den lokalen Ordner _datadir_ gelegt. Somit gehen die Daten nicht verloren.**
 
 ## Hier Sammlung von aufgetreten Problemen:
 
