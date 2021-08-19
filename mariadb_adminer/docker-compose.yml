@@ -1,0 +1,25 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root10Adminer!
+      MYSQL_USER: adminer
+      MYSQL_PASSWORD: adminer
+      MYSQL_DATABASE: feedback
+    ports:
+      - 4444:3306
+    volumes:
+      - db_data:/var/lib/mysql
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    environment:
+      ADMINER_DEFAULT_SERVER: mariadb
+    restart: always
+    ports:
+      - 5555:8080
+volumes:
+  db_data:
