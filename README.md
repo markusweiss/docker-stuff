@@ -13,7 +13,7 @@ In Produktion gehören die Daten nicht in den Container, wie gesagt das ganze hi
 
 * [command line help](cli/README.md) - Stand: 23.05.2019
 * [Install Sentry](sentry/README.md) - Stand: 13.03.2019
-* [Install Drupal](drupal/README.md) - Stand: 21.05.2019
+* [Install Drupal](drupal/README.md) - Stand: 23.05.2019
 * [Install Joomla](joomla/README.md) - Stand: 21.05.2019
 * [Install MariaDB/Adminer](mariadb_adminer/README.md) - Stand: 19.08.2021
 
@@ -21,4 +21,4 @@ In Produktion gehören die Daten nicht in den Container, wie gesagt das ganze hi
 
 
 ---
-Letzte Änderung: 19.08.2021
+Letzte Änderung: 20.08.2021
